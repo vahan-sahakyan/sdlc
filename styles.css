@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'ProductSans Light';
+  src: url(./fonts/Product-Sans/ProductSans-Light.ttf);
+}
+@font-face {
+  font-family: 'ProductSans';
+  src: url(./fonts/Product-Sans/ProductSans-Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'ProductSans Light';
+  list-style: none;
+  /* border: 1px solid orangered; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 2vw;
+}
+.hidden {
+  display: none;
+}
+.slide-header {
+  color: #4285f4;
+  margin: 3em;
+  display: flex;
+  justify-content: flex-end;
+}
+.slide-header > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide-number,
+.empty-flex-col {
+  flex: 1;
+}
+.slide-name h1,
+.slide-number h1 {
+  font-family: 'ProductSans';
+}
+.slide-name h1 {
+  font-size: 2.5rem;
+}
+.slide-number h1 {
+  font-size: 3rem;
+
+  border: 0.4rem solid #4285f4;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 2em;
+}
+.slide-name {
+  flex: 10;
+}
+/* //////////////// */
+/* SLIDE */
+
+.slide-container {
+  font-size: 2rem;
+  line-height: 2em;
+  /* border: 1px solid orangered; */
+  padding: 2em 4em;
+}
+
+.slide-row p {
+  color: #333;
+}
+.slide-row {
+  list-style-type: disc;
+  color: #4285f4;
+}
+
+/* SLIDE END */
+/* //////////////// */
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  /* min-height: 10em; */
+  width: 100vw;
+  text-align: center;
+}
+
+.page-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.3em;
+  margin-bottom: 3em;
+}
+
+.page-item {
+  cursor: pointer;
+
+  color: #333;
+  background-color: #0002;
+
+  flex: 1;
+  line-height: 4em;
+  transform: skewX(30deg);
+}
+.page-item * {
+  transform: skewX(-30deg);
+}
+.page-item:first-child {
+  padding-left: 2em;
+  margin-left: -2em;
+}
+.page-item:last-child {
+  padding-right: 2em;
+  margin-right: -2em;
+}
+
+.page-item:hover {
+  background-color: #3479e7;
+  color: #fff;
+}
+.seen {
+  background-color: #4285f4;
+  color: #fff;
+}
+
+/* #1A4E66#E26C22#FFFFFF */
