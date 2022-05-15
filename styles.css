@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "ProductSans Light";
+  font-family: 'ProductSans Light';
   src: url(./fonts/Product-Sans/ProductSans-Light.ttf);
 }
 @font-face {
-  font-family: "ProductSans";
+  font-family: 'ProductSans';
   src: url(./fonts/Product-Sans/ProductSans-Regular.ttf);
 }
 
@@ -11,7 +11,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "ProductSans Light";
+  font-family: 'ProductSans Light';
   list-style: none;
   /* border: 1px solid orangered; */
 }
@@ -38,7 +38,7 @@
 .welcome-title {
   font-size: 4.2vw;
   color: #4285f4;
-  font-family: "ProductSans";
+  font-family: 'ProductSans';
 }
 .welcome p {
   font-size: 2vmax;
@@ -89,7 +89,7 @@ h4 {
 }
 .slide-name h1,
 .slide-number h1 {
-  font-family: "ProductSans";
+  font-family: 'ProductSans';
 }
 .slide-name h1 {
   font-size: 3rem;
@@ -113,10 +113,10 @@ h4 {
 
 .slide-container {
   font-size: 2rem;
-  line-height: 2em;
+  line-height: 1.8em;
   /* border: 1px solid orangered; */
-  padding: 2em 20vw;
-  margin-bottom: 6em;
+  padding: 1em 18vw;
+  margin-bottom: 3em;
 }
 
 .slide-row p {
@@ -125,8 +125,6 @@ h4 {
 .slide-row {
   list-style-type: disc;
   color: #4285f4;
-  font-size: 2.5vw;
-  line-height: 5.5vw;
 }
 
 /* SLIDE END */
