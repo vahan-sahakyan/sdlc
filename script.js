@@ -25,8 +25,8 @@ const renderPage = () => {
   slideName.textContent = slides[numPage - 1].name;
 
   pageItems.forEach(pageItem => {
-    const id = pageItem.dataset.id - 1;
-    if (id < numPage) {
+    const id = pageItem.dataset.id;
+    if (id <= numPage) {
       pageItem.classList.add('seen');
     } else {
       pageItem.classList.remove('seen');
