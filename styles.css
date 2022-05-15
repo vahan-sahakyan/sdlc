@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'ProductSans Light';
+  font-family: "ProductSans Light";
   src: url(./fonts/Product-Sans/ProductSans-Light.ttf);
 }
 @font-face {
-  font-family: 'ProductSans';
+  font-family: "ProductSans";
   src: url(./fonts/Product-Sans/ProductSans-Regular.ttf);
 }
 
@@ -11,9 +11,38 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'ProductSans Light';
+  font-family: "ProductSans Light";
   list-style: none;
   /* border: 1px solid orangered; */
+}
+
+.welcome {
+  z-index: 999;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+
+  background-color: #fff5;
+  backdrop-filter: blur(10px);
+}
+
+.welcome-title {
+  font-size: 4.2vw;
+  color: #4285f4;
+  font-family: "ProductSans";
+}
+.welcome p {
+  font-size: 2vmax;
+  line-height: 0.8em;
 }
 
 body::-webkit-scrollbar {
@@ -39,6 +68,10 @@ h4 {
 .hidden {
   display: none;
 }
+.invisible {
+  opacity: 0;
+  transition: 700ms;
+}
 .slide-header {
   color: #4285f4;
   margin: 3em;
@@ -56,10 +89,10 @@ h4 {
 }
 .slide-name h1,
 .slide-number h1 {
-  font-family: 'ProductSans';
+  font-family: "ProductSans";
 }
 .slide-name h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .slide-number h1 {
   font-size: 3rem;
@@ -82,7 +115,7 @@ h4 {
   font-size: 2rem;
   line-height: 2em;
   /* border: 1px solid orangered; */
-  padding: 2em 4em;
+  padding: 2em 20vw;
   margin-bottom: 6em;
 }
 
@@ -92,6 +125,8 @@ h4 {
 .slide-row {
   list-style-type: disc;
   color: #4285f4;
+  font-size: 2.5vw;
+  line-height: 5.5vw;
 }
 
 /* SLIDE END */
