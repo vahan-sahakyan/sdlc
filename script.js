@@ -58,11 +58,11 @@ document.addEventListener("keydown", (e) => {
 
 document.addEventListener("keydown", (e) => {
   numPage;
-  if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+  if (e.key === "ArrowRight" || e.key === "ArrowDown" || e.key === "PageDown") {
     if (numPage === 6) return;
     numPage++;
   }
-  if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+  if (e.key === "ArrowLeft" || e.key === "ArrowUp" || e.key === "PageUp") {
     if (numPage === 1) return;
     numPage--;
   }
