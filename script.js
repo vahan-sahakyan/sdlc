@@ -57,20 +57,25 @@ document.addEventListener("keydown", (e) => {
 });
 
 document.addEventListener("keydown", (e) => {
-  numPage;
-  if (e.key === "ArrowRight" || e.key === "ArrowDown" || e.key === "PageDown") {
-    if (numPage === 6) return;
+  // const navigationKeys = ["ArrowRight", "ArrowDown", "PageDown", "ArrowLeft", "ArrowUp", "PageUp", "Home", "End"];
+  // if (!navigationKeys.includes(e.key)) return;
+  const isNextKey =
+    e.key === "ArrowRight" || e.key === "ArrowDown" || e.key === "PageDown";
+  const isPreviousKey =
+    e.key === "ArrowLeft" || e.key === "ArrowUp" || e.key === "PageUp";
+  const isHomeKey = e.key === "Home";
+  const isEndKey = e.key === "End";
+
+  if (isNextKey && numPage !== 6) {
     numPage++;
-  }
-  if (e.key === "ArrowLeft" || e.key === "ArrowUp" || e.key === "PageUp") {
-    if (numPage === 1) return;
+  } else if (isPreviousKey && numPage !== 1) {
     numPage--;
-  }
-  if (e.key === "Home") {
+  } else if (isHomeKey && numPage !== 1) {
     numPage = 1;
-  }
-  if (e.key === "End") {
+  } else if (isEndKey && numPage !== 6) {
     numPage = 6;
+  } else {
+    return;
   }
   renderPage();
 });
