@@ -66,6 +66,12 @@ document.addEventListener("keydown", (e) => {
     if (numPage === 1) return;
     numPage--;
   }
+  if (e.key === "Home") {
+    numPage = 1;
+  }
+  if (e.key === "End") {
+    numPage = 6;
+  }
   renderPage();
 });
 
