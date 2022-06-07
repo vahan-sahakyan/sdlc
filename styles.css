@@ -14,6 +14,7 @@
   font-family: 'ProductSans Light';
   list-style: none;
   /* border: 1px solid orangered; */
+  touch-action: manipulation;
 }
 
 .welcome {
@@ -140,6 +141,7 @@ h4 {
 /* //////////////// */
 
 nav {
+  z-index: 777;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -190,6 +192,7 @@ nav {
 /* #1A4E66#E26C22#FFFFFF */
 
 .story-nav {
+  z-index: 555;
   position: absolute;
   left: 0;
   top: 0;
