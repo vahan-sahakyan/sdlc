@@ -93,17 +93,22 @@ pageItems.forEach(item => {
 const storyLeft = document.querySelector('.story-left');
 const storyRight = document.querySelector('.story-right');
 
-storyLeft.addEventListener('click', () => {
-  if (numPage !== 1) {
-    numPage--;
-    renderPage();
-  } else return;
-  console.log('LEFT');
+['touchend'].forEach(evt => {
+  storyLeft.addEventListener(evt, () => {
+    if (numPage !== 1) {
+      numPage--;
+      renderPage();
+    } else return;
+    console.log('LEFT');
+  });
 });
-storyRight.addEventListener('click', () => {
-  if (numPage !== 6) {
-    numPage++;
-    renderPage();
-  } else return;
-  console.log('RIGHT');
+
+['touchend'].forEach(evt => {
+  storyRight.addEventListener(evt, () => {
+    if (numPage !== 6) {
+      numPage++;
+      renderPage();
+    } else return;
+    console.log('RIGHT');
+  });
 });

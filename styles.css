@@ -197,8 +197,7 @@ nav {
   width: 100vw;
   display: flex;
 }
-.story-left,
-.story-right {
+.story-nav > * {
   border: 1px solid red;
   width: 50vw;
   background-color: #ff08;
