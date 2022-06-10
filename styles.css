@@ -107,6 +107,7 @@ h4 {
   width: 2em;
 }
 .slide-name {
+  z-index: 566;
   flex: 10;
 }
 /* //////////////// */
@@ -124,6 +125,7 @@ h4 {
   align-items: center;
 }
 .slide-content {
+  z-index: 566;
   padding-left: 1em;
   max-width: 55vw;
 }
