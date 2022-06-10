@@ -93,7 +93,7 @@ pageItems.forEach(item => {
 const storyLeft = document.querySelector('.story-left');
 const storyRight = document.querySelector('.story-right');
 
-['touchstart'].forEach(evt => {
+['click'].forEach(evt => {
   storyLeft.addEventListener(evt, () => {
     if (numPage !== 1) {
       numPage--;
@@ -103,7 +103,7 @@ const storyRight = document.querySelector('.story-right');
   });
 });
 
-['touchstart'].forEach(evt => {
+['click'].forEach(evt => {
   storyRight.addEventListener(evt, () => {
     if (numPage !== 6) {
       numPage++;
