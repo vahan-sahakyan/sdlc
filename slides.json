@@ -1,0 +1,57 @@
+{
+  "slides": [
+    {
+      "name": "Analysis",
+      "listItems": [
+        "Goals and Objectives of the project are formulated",
+        "Terms and Cost of development are determined",
+        "Analysis and formulation of Customer Requirements",
+        "Technical goals are formed and signed",
+        "Developer - \"How to Implement\"",
+        "QA Specialist - \"How to Test\""
+      ]
+    },
+    {
+      "name": "Design",
+      "listItems": [
+        "Choice of Technologies and Programming Language ",
+        "Assigning requirements of User Interface",
+        "The most suitable DBMS is determined",
+        "Hardware requirements are determined",
+        "System architecture is selected"
+      ]
+    },
+    {
+      "name": "Development",
+      "listItems": [
+        "Development using various technologies and programming languages",
+        "Creation of a prototype and working version of the product"
+      ]
+    },
+    {
+      "name": "Testing",
+      "listItems": [
+        "Checking the Product for Compliance with the requirements and needs of the Customer",
+        "Finding and Registering bugs and defects",
+        "Other activities"
+      ]
+    },
+    {
+      "name": "Deployment",
+      "listItems": [
+        "Production System Installation",
+        "Deployment of the Final product",
+        "Exploitation"
+      ]
+    },
+    {
+      "name": "Maintenace",
+      "listItems": [
+        "User Support",
+        "Defect correction (Warranty)",
+        "Implementing new functionality",
+        "Modifying existing functionality"
+      ]
+    }
+  ]
+}
